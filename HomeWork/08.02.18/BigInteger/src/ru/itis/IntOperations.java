@@ -4,20 +4,57 @@ import java.util.ArrayList;
 
 public class IntOperations {
     //ФАКТОРИАЛ
-//    public static String fact(String n) {
-//        if (n == "0") return "1";
-//        return multiplication(n, (fact(minus(n, "1"))));
-//    }
+    public static String fact(String n) {
+        String fact = n;
+        while (!n.equals("1")) {
+            fact = multiplication(fact, minus(n, "1"));
+            n = minus(n, "1");
+        }
+        return fact;
+    }
 
-//    private static String minus (String plus, String minus){
+    //ВЫЧИТАНИЕ 2 ЧИСЕЛ
+    public static String minus(String plus, String minus) {
+        ArrayList<Integer> difference = stringToAL(plus);
+        char[] minue = minus.toCharArray();
+        int count;
+        int cross;
+        int minuse = 0;
+        for (count = 1; count <= minue.length; count++) {
+            cross = difference.get(difference.size() - count) - minue[minue.length - count] + '0';
+            if (minuse > 0) {
+                cross -= minuse;
+                minuse = 0;
+            }
 
-//    }
+            if (cross < 0) {
+                difference.set(difference.size() - count, (cross + 10) % 10);
+                minuse++;
+            } else difference.set(difference.size() - count, cross);
+        }
+        while (minuse != 0) {
+            cross = difference.get(difference.size() - count) - minuse;
+            minuse = 0;
+            if (cross < 0) {
+                difference.set(difference.size() - count, -cross % 10);
+                minuse = -cross / 10;
+            } else difference.set(difference.size() - count, cross);
+        }
+        try {
+            while (difference.get(0).equals(0)) {
+                difference.remove(0);
+            }
+        } catch (IndexOutOfBoundsException exception) {
+            difference.add(0);
+        }
+        return ALtoString(difference);
+    }
 
     //ПРОИЗВЕДЕНИЕ
     public static String multiplication(String term1, String term2) {
         int length;
         String multiplication = "0";
-        ArrayList <Integer> crossing;
+        ArrayList<Integer> crossing;
         String cross;
         String termBig;
         String termSmall;
@@ -47,7 +84,7 @@ public class IntOperations {
     }
 
     //УМНОЖЕНИЕ НА 1 ЦИФРУ
-    public static String easyMultiplication(String term1, String term2) {
+    private static String easyMultiplication(String term1, String term2) {
         ArrayList<Integer> easyMultiplication = makeBiggestAsAL(term1, term2);
         int c;
         int cross;
@@ -114,7 +151,7 @@ public class IntOperations {
         }
 
         while (plus != 0 && count <= total.size()) {
-            total.set(total.size() - count, total.get(total.size()-count) + plus);
+            total.set(total.size() - count, total.get(total.size() - count) + plus);
             if (total.get(total.size() - count) > 9) {
                 plus = total.get(total.size() - count) / 10;
                 total.set(count, total.get(total.size() - count) % 10);
@@ -129,6 +166,7 @@ public class IntOperations {
         return ALtoString(total);
     }
 
+    //ИЗ БОЛЬШЕГО МАССИВА - ArrayList
     private static ArrayList<Integer> makeBiggestAsAL(String s1, String s2) {
         char[] cross;
         int length;
@@ -147,6 +185,7 @@ public class IntOperations {
         return biggestAL;
     }
 
+    //ЗАПИСЬ В ОБРАТНОМ ПОРЯДКЕ
     private static ArrayList<Integer> rebuildAL(ArrayList<Integer> reTotal) {
         int length = reTotal.size();
         ArrayList<Integer> total = new ArrayList<>();
@@ -156,6 +195,7 @@ public class IntOperations {
         return total;
     }
 
+    //ПРЕОБРАЗОВАНИЕ ArrayList В String
     private static String ALtoString(ArrayList<Integer> total) {
         String totalString = "";
         for (int x : total) {
@@ -164,6 +204,7 @@ public class IntOperations {
         return totalString;
     }
 
+    //ПРЕОБРАЗОВАНИЕ String в ArrayList
     private static ArrayList<Integer> stringToAL(String s) {
         ArrayList<Integer> num = new ArrayList<>();
         char[] numOnChar = s.toCharArray();
