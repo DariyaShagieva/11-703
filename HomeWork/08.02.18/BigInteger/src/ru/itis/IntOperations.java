@@ -77,7 +77,6 @@ public class IntOperations {
                 crossing.add(0);
             }
             multiplication = totalSum(multiplication, ALtoString(crossing));
-
         }
 
         return multiplication;
@@ -97,6 +96,8 @@ public class IntOperations {
             System.err.println("Где - то косяк");
             return null;
         } else c = toCheck.charAt(0) - '0';
+
+        if (c == '0') return "0";
 
         for (int count = easyMultiplication.size() - 1; count >= 0; count--) {
             cross = easyMultiplication.get(count) * c;
@@ -160,7 +161,9 @@ public class IntOperations {
         }
 
         if (plus != 0) {
+            total = rebuildAL(total);
             total.add(1);
+            total = rebuildAL(total);
         }
 
         return ALtoString(total);
