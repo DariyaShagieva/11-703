@@ -6,6 +6,7 @@ public class Main {
         System.out.println(IntOperations.multiplication("12345678901234567890", "12345678901234567890"));
         System.out.println(IntOperations.totalSum("12345678901234567890", "12345678901234567890"));
         System.out.println(IntOperations.multiplication("12345678901234567890", "2"));
-        System.out.println(IntOperations.fact("50"));
+        System.out.println(IntOperations.fact("57"));
+        System.out.println(IntOperations.pow("123", "50"));
     }
 }

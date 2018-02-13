@@ -5,23 +5,50 @@ import java.util.ArrayList;
 public class IntOperations {
     //ФАКТОРИАЛ
     public static String fact(String n) {
+        if (!isNum(n)) {
+            System.err.println("Вводить надо числj");
+            return null;
+        }
         String fact = n;
         while (!n.equals("1")) {
-            fact = multiplication(fact, minus(n, "1"));
-            n = minus(n, "1");
+            String cross = minus(n, "1");
+            fact = multiplication(fact, cross);
+            n = cross;
         }
         return fact;
     }
 
+    //СТЕПЕНЬ
+    public static String pow (String n, String degree){
+        if (!isNum(n) && !isNum(degree)) {
+            System.err.println("Вводить надо числа");
+            return null;
+        }
+        String cross = "";
+        String pow = "1";
+
+        while (!degree.equals(cross)){
+            pow = multiplication(pow, n);
+            cross = totalSum(cross, "1");
+        }
+        return pow;
+    }
+
     //ВЫЧИТАНИЕ 2 ЧИСЕЛ
     public static String minus(String plus, String minus) {
-        ArrayList<Integer> difference = stringToAL(plus);
-        char[] minue = minus.toCharArray();
+        ArrayList<Integer> difference = ALOperation.stringToAL(plus);
+        char[] min = minus.toCharArray();
         int count;
         int cross;
         int minuse = 0;
-        for (count = 1; count <= minue.length; count++) {
-            cross = difference.get(difference.size() - count) - minue[minue.length - count] + '0';
+
+        if (!isNum(plus) && !isNum(minus)) {
+            System.err.println("Вводить надо числа");
+            return null;
+        }
+
+        for (count = 1; count <= min.length; count++) {
+            cross = difference.get(difference.size() - count) - min[min.length - count] + '0';
             if (minuse > 0) {
                 cross -= minuse;
                 minuse = 0;
@@ -47,7 +74,7 @@ public class IntOperations {
         } catch (IndexOutOfBoundsException exception) {
             difference.add(0);
         }
-        return ALtoString(difference);
+        return ALOperation.ALtoString(difference);
     }
 
     //ПРОИЗВЕДЕНИЕ
@@ -58,6 +85,11 @@ public class IntOperations {
         String cross;
         String termBig;
         String termSmall;
+
+        if (!isNum(term1) || !isNum(term2)) {
+            System.err.println("Вводить надо числа");
+            return null;
+        }
 
         if (term1.length() > term2.length()) {
             length = term2.length();
@@ -72,11 +104,11 @@ public class IntOperations {
         char[] term = termSmall.toCharArray();
         for (int count = 0; count < length; count++) {
             cross = easyMultiplication(termBig, String.valueOf(term[term.length - count - 1]));
-            crossing = stringToAL(cross);
+            crossing = ALOperation.stringToAL(cross);
             for (int inCount = 0; inCount < count; inCount++) {
                 crossing.add(0);
             }
-            multiplication = totalSum(multiplication, ALtoString(crossing));
+            multiplication = totalSum(multiplication, ALOperation.ALtoString(crossing));
         }
 
         return multiplication;
@@ -84,14 +116,24 @@ public class IntOperations {
 
     //УМНОЖЕНИЕ НА 1 ЦИФРУ
     private static String easyMultiplication(String term1, String term2) {
-        ArrayList<Integer> easyMultiplication = makeBiggestAsAL(term1, term2);
+        ArrayList<Integer> easyMultiplication;
         int c;
         int cross;
         int plus = 0;
         String toCheck;
         if (term1.length() > term2.length()) {
+            easyMultiplication = ALOperation.stringToAL(term1);
             toCheck = term2;
-        } else toCheck = term1;
+        } else {
+            easyMultiplication = ALOperation.stringToAL(term2);
+            toCheck = term1;
+        }
+
+        if (!isNum(term1) && !isNum(term2)) {
+            System.err.println("Вводить надо числа");
+            return null;
+        }
+
         if (toCheck.length() > 1) {
             System.err.println("Где - то косяк");
             return null;
@@ -113,33 +155,49 @@ public class IntOperations {
         }
 
         if (plus > 0) {
-            easyMultiplication = rebuildAL(easyMultiplication);
+            easyMultiplication = ALOperation.rebuildAL(easyMultiplication);
             easyMultiplication.add(plus);
-            easyMultiplication = rebuildAL(easyMultiplication);
+            easyMultiplication = ALOperation.rebuildAL(easyMultiplication);
         }
-        return ALtoString(easyMultiplication);
+        return ALOperation.ALtoString(easyMultiplication);
+    }
+
+    //ПРОВЕРКА ЧИСЛА ЛИ
+    private static boolean isNum(String s) {
+        char[] num = s.toCharArray();
+        for (int count = 0; count < num.length; count++) {
+            if ('0' <= num[count] && '9' >= num[count]) continue;
+            else return false;
+        }
+        return true;
     }
 
     //СУММА 2Х ЧИСЕЛ
     public static String totalSum(String term1, String term2) {
-        ArrayList<Integer> total = makeBiggestAsAL(term1, term2);
         int cross;
         int plus = 0;
         int count;
         char[] min;
         int length;
+        ArrayList<Integer> total;
+
+        if (!isNum(term1) && !isNum(term2)) {
+            System.err.println("Вводить надо числа");
+            return null;
+        }
 
         if (term1.length() > term2.length()) {
+            total = ALOperation.stringToAL(term1);
             length = term2.length();
             min = term2.toCharArray();
         } else {
+            total = ALOperation.stringToAL(term2);
             length = term1.length();
             min = term1.toCharArray();
         }
 
         for (count = 1; count <= length; count++) {
             cross = total.get(total.size() - count) + min[length - count] - '0';
-
             if (plus > 0) {
                 cross += plus;
                 plus = 0;
@@ -161,60 +219,10 @@ public class IntOperations {
         }
 
         if (plus != 0) {
-            total = rebuildAL(total);
+            total = ALOperation.rebuildAL(total);
             total.add(1);
-            total = rebuildAL(total);
+            total = ALOperation.rebuildAL(total);
         }
-
-        return ALtoString(total);
-    }
-
-    //ИЗ БОЛЬШЕГО МАССИВА - ArrayList
-    private static ArrayList<Integer> makeBiggestAsAL(String s1, String s2) {
-        char[] cross;
-        int length;
-        ArrayList<Integer> biggestAL = new ArrayList();
-        if (s1.length() > s2.length()) {
-            cross = s1.toCharArray();
-            length = s1.length();
-        } else {
-            cross = s2.toCharArray();
-            length = s2.length();
-        }
-
-        for (int count = 0; count < length; count++) {
-            biggestAL.add(cross[count] - '0');
-        }
-        return biggestAL;
-    }
-
-    //ЗАПИСЬ В ОБРАТНОМ ПОРЯДКЕ
-    private static ArrayList<Integer> rebuildAL(ArrayList<Integer> reTotal) {
-        int length = reTotal.size();
-        ArrayList<Integer> total = new ArrayList<>();
-        for (int count = 0; count < length; count++) {
-            total.add(reTotal.get(length - count - 1));
-        }
-        return total;
-    }
-
-    //ПРЕОБРАЗОВАНИЕ ArrayList В String
-    private static String ALtoString(ArrayList<Integer> total) {
-        String totalString = "";
-        for (int x : total) {
-            totalString += x;
-        }
-        return totalString;
-    }
-
-    //ПРЕОБРАЗОВАНИЕ String в ArrayList
-    private static ArrayList<Integer> stringToAL(String s) {
-        ArrayList<Integer> num = new ArrayList<>();
-        char[] numOnChar = s.toCharArray();
-        for (char c : numOnChar) {
-            num.add(c - '0');
-        }
-        return num;
+        return ALOperation.ALtoString(total);
     }
 }
-
