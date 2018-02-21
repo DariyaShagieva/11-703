@@ -39,7 +39,28 @@ public class ArrayList implements List {
 
     @Override
     public void addToBegin(Object element) {
+        if (count == DEFAULT_SIZE) {
+            System.err.println("Массив заполнен");
+            return;
+        }
 
+        count++;
+        if (elements[0] == null) {
+            elements[0] = element;
+            return;
+        }
+
+        Object cross = elements[0];
+
+        int i = 1;
+        while (i < count + 1) {
+            elements[0] = elements[count];
+            elements[i] = cross;
+            cross = elements[0];
+            i++;
+        }
+
+        elements[0] = element;
     }
 
     @Override
@@ -51,16 +72,40 @@ public class ArrayList implements List {
 
     @Override
     public void remove(Object element) {
+        int i = 0;
+        if (elements[count - 1] == element) {
+            elements[count - 1] = null;
+            count--;
+            return;
+        }
 
+        while (elements[i] != element) {
+            i++;
+        }
+        for (int j = i; j < count - 1; j++) {
+            elements[j] = elements[j + 1];
+        }
+        count--;
     }
 
     @Override
     public boolean contains(Object element) {
+        for (Object obj : elements) {
+            if (obj == element) return true;
+        }
         return false;
     }
 
     @Override
     public int size() {
         return count;
+    }
+
+    @Override
+    public void show() {
+        for (Object obj : elements) {
+            System.out.print(obj + " ");
+        }
+        System.out.println();
     }
 }

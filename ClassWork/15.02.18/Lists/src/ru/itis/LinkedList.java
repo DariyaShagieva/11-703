@@ -73,6 +73,7 @@ public class LinkedList implements List {
         //если изначально пустой - проверка на идиотов
         if (head == null) return;
         //если один элемент - просто все обнуляем
+        count--;
         if (head == tail) {
             head = null;
             tail = null;
@@ -97,7 +98,6 @@ public class LinkedList implements List {
             }
             newNode = newNode.next;
         }
-        count--;
     }
 
     public void reverse() {
@@ -109,7 +109,6 @@ public class LinkedList implements List {
         }
         list.addToBegin(current.value);
         head = list.head;
-        count = list.count;
     }
 
 
@@ -124,7 +123,13 @@ public class LinkedList implements List {
         return false;
     }
 
-    public void showList() {
+    @Override
+    public int size() {
+        return count;
+    }
+
+    @Override
+    public void show() {
         Node current = head;
         while (current.next != null) {
             System.out.print(current.value + " ");
@@ -132,10 +137,5 @@ public class LinkedList implements List {
         }
         System.out.print(current.value);
         System.out.println();
-    }
-
-    @Override
-    public int size() {
-        return count;
     }
 }

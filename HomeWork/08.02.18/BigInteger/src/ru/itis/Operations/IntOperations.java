@@ -1,4 +1,6 @@
-package ru.itis;
+package ru.itis.Operations;
+
+import ru.itis.Operations.ALOperation;
 
 import java.util.ArrayList;
 
@@ -155,9 +157,7 @@ public class IntOperations {
         }
 
         if (plus > 0) {
-            easyMultiplication = ALOperation.rebuildAL(easyMultiplication);
-            easyMultiplication.add(plus);
-            easyMultiplication = ALOperation.rebuildAL(easyMultiplication);
+            easyMultiplication.add(0, 1);
         }
         return ALOperation.ALtoString(easyMultiplication);
     }
@@ -219,9 +219,7 @@ public class IntOperations {
         }
 
         if (plus != 0) {
-            total = ALOperation.rebuildAL(total);
-            total.add(1);
-            total = ALOperation.rebuildAL(total);
+            total.add(0, 1);
         }
         return ALOperation.ALtoString(total);
     }

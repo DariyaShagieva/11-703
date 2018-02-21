@@ -23,9 +23,9 @@ public class Main {
         list.add("Nita");
         list.remove("Bayrasheva");
 //        System.out.println(list.contains("I wanna home"));
-        list.showList();
+        list.show();
         list.reverse();
-        list.showList();
+        list.show();
         int i = 0;
     }
 }

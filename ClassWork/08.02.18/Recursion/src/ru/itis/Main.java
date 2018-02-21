@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String num = scanner.nextLine();
         System.out.println(searcher(toArr(num)));
-        //4127
+        //4627
     }
 
     public static long fact(int n) {

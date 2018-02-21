@@ -13,5 +13,5 @@ public interface Collection {
     void remove(Object element);
     boolean contains(Object element);
     int size();
-
+    void show();
 }
