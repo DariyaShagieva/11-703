@@ -7,7 +7,7 @@ package ru.itis;
  * @author Sidikov Marsel (First Software Engineering Platform)
  * @version v1.0
  */
-public interface List extends Collection {
-    int indexOf(Object element);
-    Object get(int index);
+public interface List <T> extends Collection <T> {
+    int indexOf(<T> element);
+    T get(int index);
 }

@@ -3,6 +3,7 @@ package ru.itis;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Dictionary dictionary = new Dictionary("huevoeNazvanie");
+        System.out.println(dictionary.numLen1());
     }
 }

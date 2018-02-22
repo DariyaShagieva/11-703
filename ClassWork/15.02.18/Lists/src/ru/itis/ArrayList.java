@@ -7,21 +7,21 @@ package ru.itis;
  * @author Sidikov Marsel (First Software Engineering Platform)
  * @version v1.0
  */
-public class ArrayList implements List {
+public class ArrayList <T> implements List <T> {
 
     private static final int DEFAULT_SIZE = 10;
 
-    private Object elements[];
+    private T elements[];
 
     private int count;
 
     public ArrayList() {
-        this.elements = new Object[DEFAULT_SIZE];
+        this.elements = (T[])(new Object[DEFAULT_SIZE]);
         this.count = 0;
     }
 
     @Override
-    public int indexOf(Object element) {
+    public int indexOf(T element) {
         for (int i = 0; i < count; i++) {
             if (element.equals(elements[i])) {
                 return i;
@@ -31,7 +31,7 @@ public class ArrayList implements List {
     }
 
     @Override
-    public Object get(int index) {
+    public T get(int index) {
         if (index >= 0 && index < count) {
             return elements[index];
         } else throw new IllegalArgumentException();
@@ -50,7 +50,7 @@ public class ArrayList implements List {
             return;
         }
 
-        Object cross = elements[0];
+        T cross = elements[0];
 
         int i = 1;
         while (i < count + 1) {
@@ -64,14 +64,14 @@ public class ArrayList implements List {
     }
 
     @Override
-    public void add(Object element) {
+    public void add(T element) {
         if (count < elements.length) {
             this.elements[count++] = element;
         } else throw new IllegalArgumentException();
     }
 
     @Override
-    public void remove(Object element) {
+    public void remove(T element) {
         int i = 0;
         if (elements[count - 1] == element) {
             elements[count - 1] = null;
@@ -89,8 +89,8 @@ public class ArrayList implements List {
     }
 
     @Override
-    public boolean contains(Object element) {
-        for (Object obj : elements) {
+    public boolean contains(T element) {
+        for (T obj : elements) {
             if (obj == element) return true;
         }
         return false;
@@ -103,7 +103,7 @@ public class ArrayList implements List {
 
     @Override
     public void show() {
-        for (Object obj : elements) {
+        for (T obj : elements) {
             System.out.print(obj + " ");
         }
         System.out.println();

@@ -7,13 +7,13 @@ package ru.itis;
  * @author Sidikov Marsel (First Software Engineering Platform)
  * @version v1.0
  */
-public class LinkedList implements List {
+public class LinkedList <T> implements List <T> {
 
-    private static class Node {
-        Object value;
+    private class Node {
+        T value;
         Node next;
 
-        Node(Object value) {
+        Node(T value) {
             this.value = value;
         }
     }
@@ -28,7 +28,7 @@ public class LinkedList implements List {
     }
 
     @Override
-    public int indexOf(Object element) {
+    public int indexOf(T element) {
         Node checking = head;
         for (int current = 0; current < count; current++) {
             if (head.value.equals(element)) return current;
@@ -38,7 +38,7 @@ public class LinkedList implements List {
     }
 
     @Override
-    public Object get(int index) {
+    public T get(int index) {
         Node currentElement = head;
         for (int current = 0; current < index; current++) {
             currentElement = currentElement.next;
@@ -47,7 +47,7 @@ public class LinkedList implements List {
     }
 
     @Override
-    public void addToBegin(Object element) {
+    public void addToBegin(T element) {
         Node newNode = new Node(element);
         newNode.next = head;
         head = newNode;
@@ -55,7 +55,7 @@ public class LinkedList implements List {
     }
 
     @Override
-    public void add(Object element) {
+    public void add(T element) {
         Node newNode = new Node(element);
 
         if (head == null) {
@@ -69,7 +69,7 @@ public class LinkedList implements List {
     }
 
     @Override
-    public void remove(Object element) {
+    public void remove(T element) {
         //если изначально пустой - проверка на идиотов
         if (head == null) return;
         //если один элемент - просто все обнуляем
@@ -113,7 +113,7 @@ public class LinkedList implements List {
 
 
     @Override
-    public boolean contains(Object element) {
+    public boolean contains(T element) {
         Node searcher = head;
         while (searcher.next != null) {
             if (searcher.value.equals(element)) return true;

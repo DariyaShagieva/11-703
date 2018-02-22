@@ -7,11 +7,11 @@ package ru.itis;
  * @author Sidikov Marsel (First Software Engineering Platform)
  * @version v1.0
  */
-public interface Collection {
-    void addToBegin(Object element);
-    void add(Object element);
-    void remove(Object element);
-    boolean contains(Object element);
+public interface Collection <T> {
+    void addToBegin(T element);
+    void add(T element);
+    void remove(T element);
+    boolean contains(T element);
     int size();
     void show();
 }
