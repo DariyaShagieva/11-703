@@ -1,5 +1,7 @@
 package ru.itis;
 
+import java.util.Iterator;
+
 /**
  * 15.02.2018
  * LinkedList
@@ -7,7 +9,12 @@ package ru.itis;
  * @author Sidikov Marsel (First Software Engineering Platform)
  * @version v1.0
  */
-public class LinkedList <T> implements List <T> {
+public class LinkedList<T> implements List<T> {
+
+    @Override
+    public Iterator<T> iterator() {
+        return new LinkedListIterator();
+    }
 
     private class Node {
         T value;
@@ -131,11 +138,67 @@ public class LinkedList <T> implements List <T> {
     @Override
     public void show() {
         Node current = head;
-        while (current.next != null) {
+        while (current != null) {
             System.out.print(current.value + " ");
             current = current.next;
         }
-        System.out.print(current.value);
         System.out.println();
     }
+
+    private class LinkedListIterator implements Iterator<T> {
+
+        private Node current;
+
+        public LinkedListIterator() {
+            current = head;
+        }
+
+
+        @Override
+        public boolean hasNext() {
+            return current != null;
+        }
+
+
+        @Override
+        public T next() {
+            Node cross = current;
+            current = current.next;
+            return cross.value;
+        }
+    }
+
+    public static <E extends Comparable <E>> LinkedList merge(LinkedList<E> a, LinkedList<E> b) {
+        if (a.head == null) return b;
+        if (b.head == null) return a;
+        Iterator<E> iteratorA = a.iterator();
+        Iterator<E> iteratorB = b.iterator();
+        E toMerge1;
+        E toMerge2;
+        LinkedList <E> merged = new LinkedList<>();
+        toMerge1 = iteratorA.next();
+        toMerge2 = iteratorB.next();
+        do {
+            if (toMerge1.compareTo(toMerge2) < 0) {
+                merged.add(toMerge1);
+                toMerge1 = iteratorA.next();
+            } else {
+                merged.add(toMerge2);
+                toMerge2 = iteratorB.next();
+            }
+        } while (iteratorA.hasNext() && iteratorB.hasNext());
+        if (iteratorA.hasNext()) {
+            merged.add(toMerge1);
+            while (iteratorA.hasNext()) {
+                merged.add(iteratorA.next());
+            }
+        } else {
+            merged.add(toMerge2);
+            while (iteratorB.hasNext()) {
+                merged.add(iteratorB.next());
+            }
+        }
+        return merged;
+    }
+
 }

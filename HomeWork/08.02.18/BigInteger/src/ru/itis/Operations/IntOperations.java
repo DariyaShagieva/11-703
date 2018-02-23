@@ -1,25 +1,8 @@
 package ru.itis.Operations;
 
-import ru.itis.Operations.ALOperation;
-
 import java.util.ArrayList;
 
 public class IntOperations {
-    //ФАКТОРИАЛ
-    public static String fact(String n) {
-        if (!isNum(n)) {
-            System.err.println("Вводить надо числj");
-            return null;
-        }
-        String fact = n;
-        while (!n.equals("1")) {
-            String cross = minus(n, "1");
-            fact = multiplication(fact, cross);
-            n = cross;
-        }
-        return fact;
-    }
-
     //СТЕПЕНЬ
     public static String pow (String n, String degree){
         if (!isNum(n) && !isNum(degree)) {
@@ -195,7 +178,6 @@ public class IntOperations {
             length = term1.length();
             min = term1.toCharArray();
         }
-
         for (count = 1; count <= length; count++) {
             cross = total.get(total.size() - count) + min[length - count] - '0';
             if (plus > 0) {

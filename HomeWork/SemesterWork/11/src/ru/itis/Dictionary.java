@@ -2,7 +2,10 @@ package ru.itis;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Dictionary {
 
@@ -91,12 +94,76 @@ public class Dictionary {
         System.out.print(current.value.toString());
     }
 
-    public void unique() {
-        //Я НЕ ЕБУ
-        while (true) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         //Я НЕ ЕБУ
+    public Set <String> unique() {
+        Set <String> uniqueDictionary = new Set<String>() {
+            @Override
+            public int size() {
+                return 0;
+            }
 
-        }
+            @Override
+            public boolean isEmpty() {
+                return false;
+            }
+
+            @Override
+            public boolean contains(Object o) {
+                return false;
+            }
+
+            @Override
+            public Iterator<String> iterator() {
+                return null;
+            }
+
+            @Override
+            public Object[] toArray() {
+                return new Object[0];
+            }
+
+            @Override
+            public <T> T[] toArray(T[] a) {
+                return null;
+            }
+
+            @Override
+            public boolean add(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean remove(Object o) {
+                return false;
+            }
+
+            @Override
+            public boolean containsAll(Collection<?> c) {
+                return false;
+            }
+
+            @Override
+            public boolean addAll(Collection<? extends String> c) {
+                return false;
+            }
+
+            @Override
+            public boolean retainAll(Collection<?> c) {
+                return false;
+            }
+
+            @Override
+            public boolean removeAll(Collection<?> c) {
+                return false;
+            }
+
+            @Override
+            public void clear() {
+
+            }
+        };
+        return null;
     }
+
 
     public void remove(String k) {
         //ПРОВЕРКА НА ДЕБИЛА. ЕСЛИ НЕТ НИ ОДНОГО ЭЛЕМЕНТА - ОБРЫВАЕМ
@@ -167,9 +234,9 @@ public class Dictionary {
         //СНОВА БЕРЕМ ВЕСЬ СЛОВАРЬ
         Translations all = head;
         //ПРОХОДИМСЯ ПО ВСЕМУ СПИСКУ СЛОВ ИЗ ТЕКСТА, КОТОРЫЙ НАДО ПЕРЕВЕСТИ
-        for (int count = 0; count < textToArr.length; count++) {
+        for (String currentString: textToArr) {
             //ИЩЕМ НУЖНОЕ НАМ ЗНАЧЕНИЕ
-            while (!all.value.getWord().equals(textToArr[count])) {
+            while (!all.value.getWord().equals(currentString)) {
                 all = all.next;
             }
             //ДОБАВЛЯЕМ СЛОВО - ПЕРЕВОД И ПРОБЕЛ ДЛЯ СЛЕДУЮЩЕГО СЛОВА

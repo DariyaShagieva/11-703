@@ -1,5 +1,7 @@
 package ru.itis;
 
+import java.util.Iterator;
+
 /**
  * 15.02.2018
  * ArrayList
@@ -7,7 +9,7 @@ package ru.itis;
  * @author Sidikov Marsel (First Software Engineering Platform)
  * @version v1.0
  */
-public class ArrayList <T> implements List <T> {
+public class ArrayList <T> implements List <T>  {
 
     private static final int DEFAULT_SIZE = 10;
 
@@ -38,7 +40,7 @@ public class ArrayList <T> implements List <T> {
     }
 
     @Override
-    public void addToBegin(Object element) {
+    public void addToBegin(T element) {
         if (count == DEFAULT_SIZE) {
             System.err.println("Массив заполнен");
             return;
@@ -103,9 +105,34 @@ public class ArrayList <T> implements List <T> {
 
     @Override
     public void show() {
-        for (T obj : elements) {
+        for (Object obj : elements) {
             System.out.print(obj + " ");
         }
         System.out.println();
+    }
+
+    private class ArrayListIterator implements Iterator <T> {
+
+        private int currentIndex;
+
+        public ArrayListIterator(){
+            this.currentIndex = 0;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return currentIndex < count;
+        }
+
+        @Override
+        public T next() {
+            return  elements[currentIndex++];
+        }
+    }
+
+
+    @Override
+    public Iterator iterator() {
+        return new  ArrayListIterator();
     }
 }
