@@ -135,17 +135,30 @@ public class GraphicPic {
 
     //УПОРЯДОЧИТЬ СПИСОК ОТРЕЗКОВ ПО ВОЗРАСТАНИЮ ДЛИН
     public void sort() {
-        Segment current = head;
-        for (int i = 0; i < count; i++) {
-            for (int j = count - 1; j > i; j--) {
-                if (current.length > current.next.length) {
-                    Segment cross = current;
-                    current = current.next;
-                    current.next = cross;
+        Segment inWay = head.next;
+        Segment outWay = head;
+        Segment cross = head;
+        Segment cross2 = null;
+        while(outWay != null) {
+            while(inWay.next != null) {
+                if(outWay.length > inWay.length) {
+                    Segment obj = outWay.next;
+                    outWay.next = inWay.next;
+                    inWay.next = obj;
+                    cross.next = outWay;
+                    if (cross == null){
+
+                    }
+                    if (cross2 != null){
+                        cross2.next = inWay;
+                    }
                 }
-                current = current.next;
+                inWay = inWay.next;
+                cross = cross.next;
             }
-            current = head;
+            cross2 = outWay;
+            outWay = outWay.next;
+            cross = outWay;
         }
     }
 

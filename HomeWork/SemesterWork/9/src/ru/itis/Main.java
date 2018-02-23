@@ -8,11 +8,12 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 	    GraphicPic graphic = new GraphicPic("Segments.txt");
 //        graphic.show();
-//        graphic.sort();
+        graphic.sort();
+//        graphic.show();
 //        graphic.angleList().show();
         GraphicPic newGP = graphic.lengthList(2, 3);
-        newGP.show();
-//        graphic.show();
+//        newGP.show();
+        graphic.show();
         int i = 0;
     }
 }
