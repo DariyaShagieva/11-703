@@ -9,18 +9,19 @@ import java.util.Iterator;
  * @author Sidikov Marsel (First Software Engineering Platform)
  * @version v1.0
  */
-public class LinkedList<T> implements List<T> {
+public class LinkedList<E> implements List<E> {
 
     @Override
-    public Iterator<T> iterator() {
+    public Iterator<E> iterator() {
         return new LinkedListIterator();
     }
 
     private class Node {
-        T value;
+
+        E value;
         Node next;
 
-        Node(T value) {
+        Node(E value) {
             this.value = value;
         }
     }
@@ -35,7 +36,7 @@ public class LinkedList<T> implements List<T> {
     }
 
     @Override
-    public int indexOf(T element) {
+    public int indexOf(E element) {
         Node checking = head;
         for (int current = 0; current < count; current++) {
             if (head.value.equals(element)) return current;
@@ -45,7 +46,7 @@ public class LinkedList<T> implements List<T> {
     }
 
     @Override
-    public T get(int index) {
+    public E get(int index) {
         Node currentElement = head;
         for (int current = 0; current < index; current++) {
             currentElement = currentElement.next;
@@ -54,7 +55,7 @@ public class LinkedList<T> implements List<T> {
     }
 
     @Override
-    public void addToBegin(T element) {
+    public void addToBegin(E element) {
         Node newNode = new Node(element);
         newNode.next = head;
         head = newNode;
@@ -62,7 +63,7 @@ public class LinkedList<T> implements List<T> {
     }
 
     @Override
-    public void add(T element) {
+    public void add(E element) {
         Node newNode = new Node(element);
 
         if (head == null) {
@@ -76,7 +77,7 @@ public class LinkedList<T> implements List<T> {
     }
 
     @Override
-    public void remove(T element) {
+    public void remove(E element) {
         //если изначально пустой - проверка на идиотов
         if (head == null) return;
         //если один элемент - просто все обнуляем
@@ -120,7 +121,7 @@ public class LinkedList<T> implements List<T> {
 
 
     @Override
-    public boolean contains(T element) {
+    public boolean contains(E element) {
         Node searcher = head;
         while (searcher.next != null) {
             if (searcher.value.equals(element)) return true;
@@ -145,7 +146,7 @@ public class LinkedList<T> implements List<T> {
         System.out.println();
     }
 
-    private class LinkedListIterator implements Iterator<T> {
+    private class LinkedListIterator implements Iterator<E> {
 
         private Node current;
 
@@ -161,10 +162,27 @@ public class LinkedList<T> implements List<T> {
 
 
         @Override
-        public T next() {
+        public E next() {
             Node cross = current;
             current = current.next;
             return cross.value;
+        }
+    }
+
+    public  <E extends Comparable<E>> void sort(){
+        Node outWay = head;
+        Node inWay;
+        while (outWay.next != null){
+            inWay = outWay.next;
+            while (inWay.next != null){
+                if (outWay.value.compareTo(inWay.value) < 0){
+                    E toCorrect = inWay.value;
+                    inWay.value = outWay.value;
+                    outWay.value = toCorrect;
+                }
+                inWay = inWay.next;
+            }
+            outWay = outWay.next;
         }
     }
 
