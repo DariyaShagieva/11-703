@@ -9,7 +9,7 @@ import java.util.Iterator;
  * @author Sidikov Marsel (First Software Engineering Platform)
  * @version v1.0
  */
-public class ArrayList <T> implements List <T>  {
+public class ArrayList<T> implements List<T> {
 
     private static final int DEFAULT_SIZE = 10;
 
@@ -18,8 +18,17 @@ public class ArrayList <T> implements List <T>  {
     private int count;
 
     public ArrayList() {
-        this.elements = (T[])(new Object[DEFAULT_SIZE]);
+        this.elements = (T[]) (new Object[DEFAULT_SIZE]);
         this.count = 0;
+    }
+
+    private void makeBigger() {
+        T[] newArr = (T[]) (new Object[elements.length * 2]);
+        int inCount = 0;
+        for (T remake : elements) {
+            newArr[inCount++] = remake;
+        }
+        elements = newArr;
     }
 
     @Override
@@ -41,11 +50,7 @@ public class ArrayList <T> implements List <T>  {
 
     @Override
     public void addToBegin(T element) {
-        if (count == DEFAULT_SIZE) {
-            System.err.println("Массив заполнен");
-            return;
-        }
-
+        if (count == DEFAULT_SIZE) makeBigger();
         count++;
         if (elements[0] == null) {
             elements[0] = element;
@@ -67,9 +72,8 @@ public class ArrayList <T> implements List <T>  {
 
     @Override
     public void add(T element) {
-        if (count < elements.length) {
-            this.elements[count++] = element;
-        } else throw new IllegalArgumentException();
+        if (count == elements.length) makeBigger();
+        this.elements[count++] = element;
     }
 
     @Override
@@ -111,11 +115,11 @@ public class ArrayList <T> implements List <T>  {
         System.out.println();
     }
 
-    private class ArrayListIterator implements Iterator <T> {
+    private class ArrayListIterator implements Iterator<T> {
 
         private int currentIndex;
 
-        public ArrayListIterator(){
+        public ArrayListIterator() {
             this.currentIndex = 0;
         }
 
@@ -126,13 +130,13 @@ public class ArrayList <T> implements List <T>  {
 
         @Override
         public T next() {
-            return  elements[currentIndex++];
+            return elements[currentIndex++];
         }
     }
 
 
     @Override
     public Iterator iterator() {
-        return new  ArrayListIterator();
+        return new ArrayListIterator();
     }
 }

@@ -2,22 +2,49 @@ package ru.itis;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class GraphicPic {
 
-    private Segment head;
-    private Segment tail;
-    private int count;
+    private Iterator iterator() {
+        return new GraphicPicIterator();
+    }
 
-    private class Segment {
-
+    public static class Segment {
         private int x1;
         private int x2;
         private int y1;
         private int y2;
         private double length;
         private Segment next;
+
+
+        public Segment getNext() {
+            return next;
+        }
+
+        public int getX1() {
+
+            return x1;
+        }
+
+        public int getX2() {
+            return x2;
+        }
+
+        public int getY1() {
+            return y1;
+        }
+
+        public int getY2() {
+            return y2;
+        }
+
+        public double getLength() {
+            return length;
+        }
+
 
         public Segment(int x1, int y1, int x2, int y2) {
             this.x1 = x1;
@@ -35,34 +62,44 @@ public class GraphicPic {
         private double lengthFounder() {
             int x = x2 - x1;
             int y = y2 - y1;
-            double founded = Math.sqrt(x * x + y * y);
-            return founded;
+            return Math.sqrt(x * x + y * y);
         }
+
     }
 
-    //
-    private GraphicPic() {
-        this.count = 0;
+    private Segment head;
+    private Segment tail;
+    private int count;
+
+
+    public Segment getHead() {
+        return head;
+    }
+
+    public Segment getTail() {
+        return tail;
+    }
+
+    public int getCount() {
+        return count;
     }
 
     //ПОСТРОЕНИЕ СПИСКА ПО МНОЖЕСТВУ ОТРЕЗКОВ, ЗАДАННЫХ В ТЕКСТОВОМ ФАЙЛЕ
-    public GraphicPic(String fileName) throws FileNotFoundException {
-        Scanner file = new Scanner(new File(fileName));
-        String currentSegment = file.nextLine();
+    public GraphicPic(String fileName) {
         this.count = 0;
-        int[] currentSegmentAsIntArr = stringToInt(currentSegment.split(" "));
-        Segment segment = new Segment(currentSegmentAsIntArr[0], currentSegmentAsIntArr[1],
-                currentSegmentAsIntArr[2], currentSegmentAsIntArr[3]);
-        this.count++;
-        head = segment;
-        tail = segment;
-        while (file.hasNext()) {
-            currentSegment = file.nextLine();
-            currentSegmentAsIntArr = stringToInt(currentSegment.split(" "));
-            segment = new Segment(currentSegmentAsIntArr[0], currentSegmentAsIntArr[1],
-                    currentSegmentAsIntArr[2], currentSegmentAsIntArr[3]);
-            insert(segment);
+        try {
+            Scanner file = new Scanner(new File(fileName));
+            while (file.hasNext()) {
+                String currentSegment = file.nextLine();
+                int[] currentSegmentAsIntArr = stringToInt(currentSegment.split(" "));
+                Segment segment = new Segment(currentSegmentAsIntArr[0], currentSegmentAsIntArr[1],
+                        currentSegmentAsIntArr[2], currentSegmentAsIntArr[3]);
+                insert(segment);
+            }
+        } catch (FileNotFoundException e) {
+
         }
+
     }
 
     //ВЫВОД ВСЕХ ОТРЕЗКОВ И ИНФОРМАЦИИ О НИХ НА ЭКРАН
@@ -76,6 +113,11 @@ public class GraphicPic {
 
     //ВСТАВКА ОТКРЕЗКА В СПИСОК. ПРИ ВСТАВКЕ УЧЕСТЬ, СУЩЕСТВУЕТ ЛИ ПОДОБНЫЙ ЭЛЕМЕНТ В СПИСКЕ. ЕСЛИ ЕСТЬ - НЕ ДОБАВЛЯТЬ
     public void insert(Segment f) {
+        if (head == null) {
+            tail = f;
+            head = f;
+            return;
+        }
         Segment current = head;
         while (current != null) {
             if (f.y1 == current.y1 && f.x2 == current.x2 && f.x1 == current.x1 && f.y2 == current.y2) {
@@ -91,7 +133,7 @@ public class GraphicPic {
 
     //ПОСТОРОИТЬ НОВЫЙ СПИСОК, СОСТОЯЩИЙ ИЗ ОТРЕЗКОВ, НАКЛОНЕННЫХ К ОСИ АБСЦИСС ПОД УГЛАМИ 30 И 45 ГРАДУСОВ
     public GraphicPic angleList() {
-        GraphicPic angleList = new GraphicPic();
+        GraphicPic angleList = new GraphicPic("filename.txt");
         Segment current = head;
         double cos30 = Math.sqrt(3) / 2;
         double cos45 = Math.sqrt(2) / 2;
@@ -107,10 +149,11 @@ public class GraphicPic {
         return angleList;
     }
 
+
     //ПОСТРОИТЬ НОВЫЙ СПИСОК ИЗ ОТРЕЗКОВ, ДЛИНА КОТОРЫХ НАХОДИТСЯ В ИНТЕРВАЛЕ [a, b]
     public GraphicPic lengthList(int a, int b) {
         Segment current = head;
-        GraphicPic fromAToB = new GraphicPic();
+        GraphicPic fromAToB = new GraphicPic("filename.txt");
         boolean firstElementNotFounded = true;
 
         while (current != null && firstElementNotFounded) {
@@ -134,38 +177,149 @@ public class GraphicPic {
     }
 
     //УПОРЯДОЧИТЬ СПИСОК ОТРЕЗКОВ ПО ВОЗРАСТАНИЮ ДЛИН
-    public void sort() {
-        Segment inWay = head.next;
-        Segment outWay = head;
-        Segment cross = head;
-        Segment cross2 = null;
-        while(outWay != null) {
-            while(inWay.next != null) {
-                if(outWay.length > inWay.length) {
-                    Segment obj = outWay.next;
-                    outWay.next = inWay.next;
-                    inWay.next = obj;
-                    cross.next = outWay;
-                    if (cross == null){
+    public void sortByMerge() {
+        GraphicPic[] pics = new GraphicPic[64];
+        Segment current = head;
+        pics[0] = new GraphicPic("null");
+        Segment toAdd = new Segment(current.x1, current.y1, current.x2, current.y2);
+        current = current.next;
+        pics[0].insert(toAdd);
+        pics[1] = new GraphicPic("null");
+        toAdd = new Segment(current.x1, current.y1, current.x2, current.y2);
+        current = current.next;
+        pics[1].insert(toAdd);
+        int el = 1;
+        while (current != null) {
+            if (el != 0) {
+                if (pics[el].getCount() == pics[el - 1].getCount()) {
+                    pics[el - 1] = merge(pics[el], pics[el - 1]);
+                    pics[el] = null;
+                    el--;
+                } else {
+                    el++;
+                    pics[el] = new GraphicPic("null");
+                    toAdd = new Segment(current.x1, current.y1, current.x2, current.y2);
+                    current = current.next;
+                    pics[el].insert(toAdd);
+                }
+            } else {
+                el++;
+                pics[el] = new GraphicPic("null");
+                toAdd = new Segment(current.x1, current.y1, current.x2, current.y2);
+                current = current.next;
+                pics[el].insert(toAdd);
+            }
+        }
 
-                    }
-                    if (cross2 != null){
-                        cross2.next = inWay;
-                    }
+        for (int i = el; i > 0; i--){
+            pics[i - 1] = merge(pics[i], pics[i - 1]);
+        }
+
+        head = pics[0].head;
+        tail = pics[0].tail;
+    }
+
+    private class GraphicPicIterator implements Iterator {
+
+        private Segment current;
+
+        public GraphicPicIterator() {
+            current = head;
+        }
+
+
+        @Override
+        public boolean hasNext() {
+            return current != null;
+        }
+
+
+        @Override
+        public Object next() {
+            Segment cross = new Segment(current.x1, current.y1, current.x2, current.y2);
+            current = current.next;
+            return cross;
+        }
+    }
+
+    //СЛИЯНИЕ
+    public static GraphicPic merge(GraphicPic a, GraphicPic b) {
+        GraphicPic merged = new GraphicPic("Null");
+
+        Segment toAdd;
+        Segment currentA = a.head;
+        Segment currentB = b.head;
+
+        while (currentA != null && currentB != null) {
+            if (currentA.getLength() < currentB.getLength()) {
+                toAdd = new Segment(currentA.getX1(), currentA.getY1(),
+                        currentA.getX2(), currentA.getY2());
+                merged.insert(toAdd);
+                currentA = currentA.next;
+            } else {
+                toAdd = new Segment(currentB.getX1(), currentB.getY1(),
+                        currentB.getX2(), currentB.getY2());
+                merged.insert(toAdd);
+                currentB = currentB.next;
+            }
+        }
+
+        if (currentA != null) {
+            while (currentA != null) {
+                toAdd = new Segment(currentA.getX1(), currentA.getY1(),
+                        currentA.getX2(), currentA.getY2());
+                merged.insert(toAdd);
+                currentA = currentA.next;
+            }
+        } else {
+            if (currentB != null) {
+                while (currentB != null) {
+                    toAdd = new Segment(currentB.getX1(), currentB.getY1(),
+                            currentB.getX2(), currentB.getY2());
+                    merged.insert(toAdd);
+                    currentB = currentB.next;
+                }
+            }
+        }
+
+        return merged;
+    }
+
+    //УПОРЯДОЧИТЬ СПИСОК ОТРЕЗКОВ ПО ВОЗРАСТАНИЮ ДЛИН
+    public void sortAsMudak() {
+        Segment outWay = head;
+        while (outWay.next != null) {
+            Segment inWay = outWay.next;
+            while (inWay != null) {
+                if (outWay.length > inWay.length) {
+                    int x1 = outWay.x1;
+                    int x2 = outWay.x2;
+                    int y2 = outWay.y2;
+                    int y1 = outWay.y1;
+                    double length = outWay.length;
+
+                    outWay.y2 = inWay.y2;
+                    outWay.y1 = inWay.y1;
+                    outWay.x2 = inWay.x2;
+                    outWay.x1 = inWay.x1;
+                    outWay.length = inWay.length;
+
+                    inWay.y2 = y2;
+                    inWay.y1 = y1;
+                    inWay.x2 = x2;
+                    inWay.x1 = x1;
+                    inWay.length = length;
                 }
                 inWay = inWay.next;
-                cross = cross.next;
             }
-            cross2 = outWay;
             outWay = outWay.next;
-            cross = outWay;
         }
     }
 
     private int[] stringToInt(String[] intAsString) {
         int[] ints = new int[intAsString.length];
-        for (int count = 0; count < intAsString.length; count++) {
-            ints[count] = Integer.parseInt(intAsString[count]);
+        for (int counts = 0; counts < intAsString.length; counts++) {
+            ints[counts] = Integer.parseInt(intAsString[counts]);
         }
         return ints;
     }

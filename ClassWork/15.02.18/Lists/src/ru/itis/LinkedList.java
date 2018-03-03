@@ -169,53 +169,72 @@ public class LinkedList<E> implements List<E> {
         }
     }
 
-    public  <E extends Comparable<E>> void sort(){
-        Node outWay = head;
-        Node inWay;
-        while (outWay.next != null){
-            inWay = outWay.next;
-            while (inWay.next != null){
-                if (outWay.value.compareTo(inWay.value) < 0){
-                    E toCorrect = inWay.value;
-                    inWay.value = outWay.value;
-                    outWay.value = toCorrect;
-                }
-                inWay = inWay.next;
+    public static  <E extends Comparable<E>> LinkedList <E> sortByMerge (LinkedList <E> a){
+        LinkedList <E> sortedList = new LinkedList();
+        int count = 0;
+        while (a.iterator().hasNext()){
+            for (int inCount = 0; inCount < count; count++){
+
             }
-            outWay = outWay.next;
         }
+        return null;
     }
 
-    public static <E extends Comparable <E>> LinkedList merge(LinkedList<E> a, LinkedList<E> b) {
-        if (a.head == null) return b;
-        if (b.head == null) return a;
-        Iterator<E> iteratorA = a.iterator();
-        Iterator<E> iteratorB = b.iterator();
-        E toMerge1;
-        E toMerge2;
-        LinkedList <E> merged = new LinkedList<>();
-        toMerge1 = iteratorA.next();
-        toMerge2 = iteratorB.next();
-        do {
-            if (toMerge1.compareTo(toMerge2) < 0) {
-                merged.add(toMerge1);
-                toMerge1 = iteratorA.next();
+    public void set (int index, E object){
+        if (index > count) return;
+        Node a = head;
+        Node newNodeToIndex = new Node(object);
+        for (int i = 0; i < index - 1; i++){
+            a = a.next;
+        }
+        newNodeToIndex.next = a.next;
+        a.next = newNodeToIndex;
+    }
+
+//    public  <E extends Comparable <E>> void sort(){
+//        Node outWay = head;
+//        Node inWay;
+//        while (outWay.next != null){
+//            inWay = outWay.next;
+//            inWay = outWay.next;
+//            while (inWay.next != null){
+//                if (outWay.value.compareTo(inWay.value) < 0){
+//                    E toCorrect = inWay.value;
+//                    inWay.value = outWay.value;
+//                    outWay.value = toCorrect;
+//                }
+//                inWay = inWay.next;
+//            }
+//            outWay = outWay.next;
+//        }
+//    }
+
+    public static <T extends Comparable<T>> LinkedList<T> merge(LinkedList<T> sorted1,
+                                                                LinkedList<T> sorted2) {
+        LinkedList<T> merged = new LinkedList<>();
+
+
+        while (sorted1.head != null && sorted2.head != null) {
+            if (sorted1.head.value.compareTo(sorted2.head.value) < 0) {
+                merged.add(sorted1.head.value);
+                sorted1.remove(sorted1.head.value);
             } else {
-                merged.add(toMerge2);
-                toMerge2 = iteratorB.next();
-            }
-        } while (iteratorA.hasNext() && iteratorB.hasNext());
-        if (iteratorA.hasNext()) {
-            merged.add(toMerge1);
-            while (iteratorA.hasNext()) {
-                merged.add(iteratorA.next());
-            }
-        } else {
-            merged.add(toMerge2);
-            while (iteratorB.hasNext()) {
-                merged.add(iteratorB.next());
+                merged.add(sorted2.head.value);
+                sorted2.remove(sorted2.head.value);
             }
         }
+        if (sorted1.head != null) {
+            while (sorted2.head != null) {
+                merged.add(sorted2.head.value);
+                sorted2.remove(sorted2.head.value);
+            }
+        } else if (sorted2.head != null) {
+            while (sorted1.head != null) {
+                merged.add(sorted1.head.value);
+                sorted1.remove(sorted1.head.value);
+            }
+        }
+
         return merged;
     }
 
