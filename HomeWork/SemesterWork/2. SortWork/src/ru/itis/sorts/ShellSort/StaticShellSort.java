@@ -25,7 +25,7 @@ public class StaticShellSort {
         return timeOfAction;
     }
 
-    public static void setTimeOfAction(double timeOfAction) {
+    private static void setTimeOfAction(double timeOfAction) {
         StaticShellSort.timeOfAction = timeOfAction;
     }
 

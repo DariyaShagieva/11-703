@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/itis/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="717">
-              <caret line="225" column="26" lean-forward="false" selection-start-line="225" selection-start-column="26" selection-end-line="225" selection-end-column="26" />
+            <state relative-caret-position="457">
+              <caret line="75" column="16" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="75" selection-end-column="16" />
               <folding>
                 <element signature="e#263#264#0" expanded="true" />
                 <element signature="e#310#311#0" expanded="true" />
@@ -34,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -57,8 +57,8 @@
       <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/itis/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2751">
-              <caret line="139" column="7" lean-forward="false" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="7" />
+            <state relative-caret-position="1974">
+              <caret line="94" column="5" lean-forward="false" selection-start-line="79" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
               <folding>
                 <element signature="e#2297#2298#0" expanded="true" />
                 <element signature="e#2325#2326#0" expanded="true" />
@@ -68,6 +68,7 @@
                 <element signature="e#2775#2776#0" expanded="true" />
                 <element signature="e#2820#2821#0" expanded="true" />
                 <element signature="e#2875#2876#0" expanded="true" />
+                <element signature="e#2930#2931#0" expanded="true" />
                 <element signature="e#2976#2977#0" expanded="true" />
               </folding>
             </state>
@@ -91,6 +92,7 @@
       <find>se</find>
       <find>ite</find>
       <find>It</find>
+      <find>rem</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -116,7 +118,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
+    <option name="x" value="14" />
     <option name="width" value="816" />
     <option name="height" value="908" />
   </component>
@@ -331,14 +333,16 @@
       <workItem from="1519634977758" duration="18354000" />
       <workItem from="1519883521031" duration="1023000" />
       <workItem from="1520089954408" duration="1216000" />
+      <workItem from="1520232508915" duration="2503000" />
+      <workItem from="1521112231751" duration="1270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85631000" />
+    <option name="totallyTimeSpent" value="89404000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="0" width="816" height="908" extended-state="0" />
+    <frame x="14" y="0" width="816" height="908" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -441,6 +445,7 @@
             <element signature="e#2775#2776#0" expanded="true" />
             <element signature="e#2820#2821#0" expanded="true" />
             <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
             <element signature="e#2976#2977#0" expanded="true" />
           </folding>
         </state>
@@ -496,6 +501,7 @@
             <element signature="e#2775#2776#0" expanded="true" />
             <element signature="e#2820#2821#0" expanded="true" />
             <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
             <element signature="e#2976#2977#0" expanded="true" />
           </folding>
         </state>
@@ -565,6 +571,7 @@
             <element signature="e#2775#2776#0" expanded="true" />
             <element signature="e#2820#2821#0" expanded="true" />
             <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
             <element signature="e#2976#2977#0" expanded="true" />
           </folding>
         </state>
@@ -634,6 +641,7 @@
             <element signature="e#2775#2776#0" expanded="true" />
             <element signature="e#2820#2821#0" expanded="true" />
             <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
             <element signature="e#2976#2977#0" expanded="true" />
           </folding>
         </state>
@@ -703,6 +711,7 @@
             <element signature="e#2775#2776#0" expanded="true" />
             <element signature="e#2820#2821#0" expanded="true" />
             <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
             <element signature="e#2976#2977#0" expanded="true" />
           </folding>
         </state>
@@ -772,6 +781,7 @@
             <element signature="e#2775#2776#0" expanded="true" />
             <element signature="e#2820#2821#0" expanded="true" />
             <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
             <element signature="e#2976#2977#0" expanded="true" />
           </folding>
         </state>
@@ -854,6 +864,7 @@
             <element signature="e#2775#2776#0" expanded="true" />
             <element signature="e#2820#2821#0" expanded="true" />
             <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
             <element signature="e#2976#2977#0" expanded="true" />
           </folding>
         </state>
@@ -906,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/itis/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2751">
-          <caret line="139" column="7" lean-forward="false" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="7" />
+        <state relative-caret-position="1974">
+          <caret line="94" column="5" lean-forward="false" selection-start-line="79" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
           <folding>
             <element signature="e#2297#2298#0" expanded="true" />
             <element signature="e#2325#2326#0" expanded="true" />
@@ -917,23 +928,16 @@
             <element signature="e#2775#2776#0" expanded="true" />
             <element signature="e#2820#2821#0" expanded="true" />
             <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
             <element signature="e#2976#2977#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/itis/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="225" column="26" lean-forward="false" selection-start-line="225" selection-start-column="26" selection-end-line="225" selection-end-column="26" />
+        <state relative-caret-position="457">
+          <caret line="75" column="16" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="75" selection-end-column="16" />
           <folding>
             <element signature="e#263#264#0" expanded="true" />
             <element signature="e#310#311#0" expanded="true" />
@@ -948,6 +952,14 @@
             <element signature="e#3531#3532#0" expanded="true" />
             <element signature="e#3577#3578#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

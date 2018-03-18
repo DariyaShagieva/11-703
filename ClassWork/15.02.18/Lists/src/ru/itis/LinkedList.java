@@ -169,17 +169,6 @@ public class LinkedList<E> implements List<E> {
         }
     }
 
-    public static  <E extends Comparable<E>> LinkedList <E> sortByMerge (LinkedList <E> a){
-        LinkedList <E> sortedList = new LinkedList();
-        int count = 0;
-        while (a.iterator().hasNext()){
-            for (int inCount = 0; inCount < count; count++){
-
-            }
-        }
-        return null;
-    }
-
     public void set (int index, E object){
         if (index > count) return;
         Node a = head;
@@ -191,28 +180,10 @@ public class LinkedList<E> implements List<E> {
         a.next = newNodeToIndex;
     }
 
-//    public  <E extends Comparable <E>> void sort(){
-//        Node outWay = head;
-//        Node inWay;
-//        while (outWay.next != null){
-//            inWay = outWay.next;
-//            inWay = outWay.next;
-//            while (inWay.next != null){
-//                if (outWay.value.compareTo(inWay.value) < 0){
-//                    E toCorrect = inWay.value;
-//                    inWay.value = outWay.value;
-//                    outWay.value = toCorrect;
-//                }
-//                inWay = inWay.next;
-//            }
-//            outWay = outWay.next;
-//        }
-//    }
 
     public static <T extends Comparable<T>> LinkedList<T> merge(LinkedList<T> sorted1,
                                                                 LinkedList<T> sorted2) {
         LinkedList<T> merged = new LinkedList<>();
-
 
         while (sorted1.head != null && sorted2.head != null) {
             if (sorted1.head.value.compareTo(sorted2.head.value) < 0) {
@@ -223,6 +194,7 @@ public class LinkedList<E> implements List<E> {
                 sorted2.remove(sorted2.head.value);
             }
         }
+
         if (sorted1.head != null) {
             while (sorted2.head != null) {
                 merged.add(sorted2.head.value);
