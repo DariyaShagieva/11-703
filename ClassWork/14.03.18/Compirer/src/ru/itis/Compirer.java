@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Compiller
+ * Compirer
  * <p>
  * 16 03 2018
  *
@@ -16,7 +16,7 @@ import java.util.List;
  */
 
 //"x1:=123;x2:=x1+x3"
-public class Compiller {
+public class Compirer {
     public static void analise(String input) {
         char[] inputAsChar = input.toCharArray();
         int length = inputAsChar.length;

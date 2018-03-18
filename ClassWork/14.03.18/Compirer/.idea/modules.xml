@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Compiller.iml" filepath="$PROJECT_DIR$/Compiller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Compirer.iml" filepath="$PROJECT_DIR$/Compirer.iml" />
     </modules>
   </component>
 </project>

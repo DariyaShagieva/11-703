@@ -1,7 +1,7 @@
 package ru.itis.Variable;
 
 /**
- * Compiller
+ * Compirer
  * <p>
  * 16 03 2018
  *

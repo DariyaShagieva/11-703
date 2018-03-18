@@ -1,12 +1,11 @@
 package ru.itis.Variable;
 
-import javafx.fxml.Initializable;
-import ru.itis.Compiller;
+import ru.itis.Compirer;
 
 import java.util.LinkedList;
 
 /**
- * Compiller
+ * Compirer
  * <p>
  * 18 03 2018
  *
@@ -16,7 +15,7 @@ public class VariableBuilder {
     private static LinkedList<Variable> variables = new LinkedList<>();
 
     public static LinkedList<Variable> createList(String input) {
-        Compiller.analise(input);
+        Compirer.analise(input);
         String[] vars = input.split(";");
         int cross;
         boolean founded = false;
