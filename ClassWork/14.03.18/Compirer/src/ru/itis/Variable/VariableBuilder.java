@@ -77,7 +77,6 @@ public class VariableBuilder {
                 }
                 variable.setAnswer(currentNum);
                 variables.add(variable);
-                currentNum = 0;
             }
         }
         return variables;
