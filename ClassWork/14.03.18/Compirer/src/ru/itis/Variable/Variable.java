@@ -10,7 +10,7 @@ package ru.itis.Variable;
 public class Variable {
     private String var;
     private String name;
-    private int answer;
+    private double answer;
 
     public Variable(String inputVar) {
         name = inputVar.split(":=")[0];
@@ -25,11 +25,11 @@ public class Variable {
         return name;
     }
 
-    public int getAnswer(){
+    public double getAnswer(){
         return answer;
     }
 
-    public void setAnswer(int answer) {
+    public void setAnswer(double answer) {
         this.answer = answer;
     }
 

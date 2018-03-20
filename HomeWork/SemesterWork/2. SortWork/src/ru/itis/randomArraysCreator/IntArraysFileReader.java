@@ -21,8 +21,9 @@ public class IntArraysFileReader {
             String [] current;
             int neededArrays = random.nextInt(50) + 50;
             fileArray = new int[neededArrays][];
+            int lineLength;
             for (int count = 0; count < neededArrays; count++ ){
-                int lineLength = random.nextInt(4900) + 100;
+                lineLength = random.nextInt(4900) + 100;
                 current = file.nextLine().split(" ");
                 fileArray[count] = new int [lineLength];
                 for (int inCount = 0; inCount < lineLength; inCount++){
