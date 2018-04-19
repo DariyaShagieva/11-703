@@ -5,7 +5,6 @@ import ru.itis.Variable.VariableBuilder;
 
 import java.util.InputMismatchException;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Compirer
@@ -58,7 +57,7 @@ public class Compirer {
                         }
 
                         //Окончание значения переменной
-                        if (inputAsChar[c] == ';') {
+                        if (inputAsChar[c] == ';' && "+-/*".indexOf(inputAsChar[c - 1]) == -1) {
                             //Если больше нет переменных, все остальные факторы проверены - завершаем
                             //И выводим статус последовательности
                             if (c == length - 1) {
@@ -76,7 +75,6 @@ public class Compirer {
                         //если что - то не подходит обрываемым условиям последовательности - ловим ошибку
                         state = 2;
                         break;
-
                     case 2:
                         throw new InputMismatchException("ошибка");
                 }
@@ -91,7 +89,7 @@ public class Compirer {
         }
     }
 
-    public static List<Variable> process(String input) {
+    public static LinkedList<Variable> process(String input) {
         return VariableBuilder.createList(input);
     }
 

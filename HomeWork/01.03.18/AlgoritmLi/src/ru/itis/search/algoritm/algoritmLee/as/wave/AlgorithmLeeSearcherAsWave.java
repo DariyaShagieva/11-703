@@ -1,6 +1,7 @@
 package ru.itis.search.algoritm.algoritmLee.as.wave;
 
 import ru.itis.search.algoritm.Searcher;
+import ru.itis.search.algoritm.algoritmLee.as.LeeSearcher;
 
 /**
  * AlgoritmLee
@@ -18,8 +19,8 @@ public class AlgorithmLeeSearcherAsWave implements Searcher {
 
     @Override
     public int numOfAction(int[][] matrix) {
-        int[][] beguine = placeFounder(1, matrix);
-        int[][] end = placeFounder(-1, matrix);
+        int[][] beguine = LeeSearcher.placeFounder(1, matrix);
+        int[][] end = LeeSearcher.placeFounder(-1, matrix);
 
         //случай, когда нет начальной или конечной позиции
         if (beguine[0][0] == -1 || end[0][0] == -1) {
@@ -81,44 +82,14 @@ public class AlgorithmLeeSearcherAsWave implements Searcher {
                 equals = false;
             }
 
-            showMatrix(matrix);
+            LeeSearcher.showMatrix(matrix);
             System.out.println();
-            current = placeFounder(currentNum, matrix);
+             current = LeeSearcher.placeFounder(currentNum, matrix);
             currentNum++;
 
-        } while (equals && matrix[end[0][0]][end[0][1]] == -1);
+            } while (equals && matrix[end[0][0]][end[0][1]] == -1);
         return matrix[end[0][0]][end[0][1]];
     }
 
-    private int[][] placeFounder(int position, int[][] matrix) {
-        int[][] pos = new int[0][2];
-        int num = 1;
-        for (int c = 0; c < matrix.length; c++) {
-            for (int count = 0; count < matrix[c].length; count++) {
-                if (position == matrix[c][count]) {
-                    pos = merge(pos);
-                    pos[num - 1] = new int[]{c, count};
-                    num++;
-                }
-            }
-        }
-        return pos;
-    }
 
-    private void showMatrix(int[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print(matrix[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-
-    private int[][] merge(int[][] matrix) {
-        int[][] matrixRebuild = new int[matrix.length + 1][2];
-        for (int c = 0; c < matrix.length; c++) {
-            matrixRebuild[c] = matrix[c];
-        }
-        return matrixRebuild;
-    }
 }

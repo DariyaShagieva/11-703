@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9a3e7c6d-9394-4279-857a-b0b480cc177c" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaticShellSortTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StaticShellSortTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EachTestNotifier.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <marker date="1516033914000" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1516033914000" expanded="false" signature="156:420" ph="..." />
+                <marker date="1516033914000" expanded="true" signature="613:694" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="750:1032" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="1109:1296" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="1365:1454" ph="{...}" />
+                <marker date="1516033914000" expanded="false" signature="1490:1501" ph=" { " />
+                <marker date="1516033914000" expanded="false" signature="1550:1556" ph=" }" />
+                <marker date="1516033914000" expanded="false" signature="1591:1602" ph=" { " />
+                <marker date="1516033914000" expanded="false" signature="1650:1656" ph=" }" />
+                <marker date="1516033914000" expanded="false" signature="1691:1702" ph=" { " />
+                <marker date="1516033914000" expanded="false" signature="1750:1756" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunNotifier.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/notification/RunNotifier.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1344">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding>
+                <marker date="1516033914000" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1516033914000" expanded="false" signature="153:428" ph="..." />
+                <marker date="1516033914000" expanded="true" signature="608:615" ph="{}" />
+                <marker date="1516033914000" expanded="true" signature="667:875" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="930:1144" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="1204:1357" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="1425:1635" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="1467:1621" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="1546:1611" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="1694:1900" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="1736:1886" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="1815:1876" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="1995:2328" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="2137:2304" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="2220:2290" ph="{...}" />
+                <marker date="1516033914000" expanded="false" signature="2378:2389" ph=" { " />
+                <marker date="1516033914000" expanded="false" signature="2451:2457" ph=" }" />
+                <marker date="1516033914000" expanded="true" signature="2552:3019" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="2642:2994" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="2729:2980" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="3085:3298" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="3127:3284" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="3206:3274" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="3363:3570" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="3405:3556" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="3484:3546" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="3636:3844" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="3678:3830" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="3757:3820" ph="{...}" />
+                <marker date="1516033914000" expanded="false" signature="3874:3885" ph=" { " />
+                <marker date="1516033914000" expanded="false" signature="3908:3914" ph=" }" />
+                <marker date="1516033914000" expanded="true" signature="3971:4182" ph="{...}" />
+                <marker date="1516033914000" expanded="true" signature="4224:5309" ph="{...}" />
+                <marker date="1516033914000" expanded="false" signature="4307:4322" ph=" { " />
+                <marker date="1516033914000" expanded="false" signature="4355:4365" ph=" }" />
+                <marker date="1516033914000" expanded="false" signature="4411:4426" ph=" { " />
+                <marker date="1516033914000" expanded="false" signature="4467:4477" ph=" }" />
+                <marker date="1516033914000" expanded="true" signature="4498:5219" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Failure.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/notification/Failure.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <marker date="1516033914000" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1516033914000" expanded="false" signature="153:268" ph="..." />
+                <marker date="1516033914000" expanded="true" signature="532:629" ph="{...}" />
+                <marker date="1516033914000" expanded="false" signature="664:675" ph=" { " />
+                <marker date="1516033914000" expanded="false" signature="717:723" ph=" }" />
+                <marker date="1516033914000" expanded="false" signature="764:775" ph=" { " />
+                <marker date="1516033914000" expanded="false" signature="800:806" ph=" }" />
+                <marker date="1516033914000" expanded="false" signature="843:854" ph=" { " />
+                <marker date="1516033914000" expanded="false" signature="883:889" ph=" }" />
+                <marker date="1516033914000" expanded="false" signature="919:930" ph=" { " />
+                <marker date="1516033914000" expanded="false" signature="1002:1008" ph=" }" />
+                <marker date="1516033914000" expanded="true" signature="1039:1255" ph="{...}" />
+                <marker date="1516033914000" expanded="false" signature="1287:1298" ph=" { " />
+                <marker date="1516033914000" expanded="false" signature="1338:1344" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sorts.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/Sorts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShellSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/ShellSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding>
+                <element signature="e#1407#1408#0" expanded="true" />
+                <element signature="e#1433#1434#0" expanded="true" />
+                <element signature="e#1464#1465#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashSet.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/HashSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="93" column="63" lean-forward="true" selection-start-line="93" selection-start-column="63" selection-end-line="93" selection-end-column="63" />
+              <folding>
+                <element signature="e#8064#8065#0" expanded="true" />
+                <element signature="e#8112#8113#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaticShellSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/StaticShellSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding>
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#675#676#0" expanded="true" />
+                <element signature="e#717#718#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
+                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#867#868#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>988266488</find>
+      <find>536263704</find>
+      <find>add</find>
+    </findStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ru/itis/ShellSort/SortRealization.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/Sorts/SortRealization.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/Sorts/ShellSort.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/Sorts/StaticShellSort.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/Sorts/Sorts.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/Sorts/ShellSort/StaticShellSort.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/RandomArraysCreator/IntArraysGenerator.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/Sorts/ShellSort/ShellSort.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/RandomArraysCreator/IntArraysMaxFileGenerator.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/IntArraysFileReader.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/StaticShellSort.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysMaxFileGenerator.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysFileReader.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/ShellSort.java" />
+        <option value="$PROJECT_DIR$/src/StaticShellSortTest.java" />
+        <option value="$PROJECT_DIR$/src/ru/itis/Main.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1612" />
+    <option name="height" value="912" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ClassWork/14.03.18/Compirer" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.StaticShellSortTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="ru.itis.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="2. SortWork" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration name="StaticShellSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="2. SortWork" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StaticShellSortTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.StaticShellSortTest" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.StaticShellSortTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a3e7c6d-9394-4279-857a-b0b480cc177c" name="Default" comment="" />
+      <created>1520885977931</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520885977931</updated>
+      <workItem from="1520885986495" duration="34677000" />
+      <workItem from="1521193608520" duration="53000" />
+      <workItem from="1521195034564" duration="1445000" />
+      <workItem from="1521460869854" duration="571000" />
+      <workItem from="1521561074862" duration="3036000" />
+      <workItem from="1521572267922" duration="1196000" />
+      <workItem from="1521614920915" duration="694000" />
+      <workItem from="1521801803692" duration="890000" />
+      <workItem from="1521821616795" duration="3195000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="StaticShellSortTest - 2018.03.23 at 13h 49m 28s.xml">
+      <configuration name="StaticShellSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StaticShellSortTest - 2018.03.23 at 13h 49m 56s.xml">
+      <configuration name="StaticShellSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StaticShellSortTest - 2018.03.23 at 13h 52m 40s.xml">
+      <configuration name="StaticShellSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StaticShellSortTest - 2018.03.23 at 13h 52m 46s.xml">
+      <configuration name="StaticShellSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StaticShellSortTest - 2018.03.23 at 13h 55m 01s.xml">
+      <configuration name="StaticShellSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StaticShellSortTest - 2018.03.23 at 13h 55m 46s.xml">
+      <configuration name="StaticShellSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StaticShellSortTest - 2018.03.23 at 13h 57m 44s.xml">
+      <configuration name="StaticShellSortTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="45757000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1618" height="918" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3254902" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27164367" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40392157" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysMaxFileGenerator.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysMaxFileGenerator.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/itis/Main.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysMaxFileGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/ShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArraysInfo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39102">
+          <caret line="98" column="41" lean-forward="false" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/Sorts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/ShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/StaticShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysMaxFileGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArraysInfo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39102">
+          <caret line="98" column="41" lean-forward="false" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/Sorts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysMaxFileGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/StaticShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/Sorts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/StaticShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysMaxFileGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArraysInfo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39102">
+          <caret line="98" column="6" lean-forward="false" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArraysInfo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39102">
+          <caret line="98" column="6" lean-forward="false" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/ShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/Sorts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/StaticShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysMaxFileGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArraysInfo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39102">
+          <caret line="98" column="6" lean-forward="false" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/ShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/Sorts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/StaticShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysMaxFileGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArraysInfo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39102">
+          <caret line="98" column="41" lean-forward="false" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysMaxFileGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-980">
+          <caret line="531" column="22" lean-forward="false" selection-start-line="531" selection-start-column="22" selection-end-line="531" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/randomArraysCreator/IntArraysFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/StaticShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/notification/Failure.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1516033914000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516033914000" expanded="false" signature="153:268" ph="..." />
+            <marker date="1516033914000" expanded="true" signature="532:629" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="664:675" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="717:723" ph=" }" />
+            <marker date="1516033914000" expanded="false" signature="764:775" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="800:806" ph=" }" />
+            <marker date="1516033914000" expanded="false" signature="843:854" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="883:889" ph=" }" />
+            <marker date="1516033914000" expanded="false" signature="919:930" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="1002:1008" ph=" }" />
+            <marker date="1516033914000" expanded="true" signature="1039:1255" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="1287:1298" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="1338:1344" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1516033914000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516033914000" expanded="false" signature="156:420" ph="..." />
+            <marker date="1516033914000" expanded="true" signature="613:694" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="750:1032" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="1109:1296" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="1365:1454" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="1490:1501" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="1550:1556" ph=" }" />
+            <marker date="1516033914000" expanded="false" signature="1591:1602" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="1650:1656" ph=" }" />
+            <marker date="1516033914000" expanded="false" signature="1691:1702" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="1750:1756" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/notification/RunNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <marker date="1516033914000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516033914000" expanded="false" signature="153:428" ph="..." />
+            <marker date="1516033914000" expanded="true" signature="608:615" ph="{}" />
+            <marker date="1516033914000" expanded="true" signature="667:875" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="930:1144" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="1204:1357" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="1425:1635" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="1467:1621" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="1546:1611" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="1694:1900" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="1736:1886" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="1815:1876" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="1995:2328" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="2137:2304" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="2220:2290" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="2378:2389" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="2451:2457" ph=" }" />
+            <marker date="1516033914000" expanded="true" signature="2552:3019" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="2642:2994" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="2729:2980" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="3085:3298" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="3127:3284" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="3206:3274" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="3363:3570" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="3405:3556" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="3484:3546" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="3636:3844" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="3678:3830" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="3757:3820" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="3874:3885" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="3908:3914" ph=" }" />
+            <marker date="1516033914000" expanded="true" signature="3971:4182" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="4224:5309" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="4307:4322" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="4355:4365" ph=" }" />
+            <marker date="1516033914000" expanded="false" signature="4411:4426" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="4467:4477" ph=" }" />
+            <marker date="1516033914000" expanded="true" signature="4498:5219" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1516033914000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516033914000" expanded="true" signature="277:284" ph="{}" />
+            <marker date="1516033914000" expanded="true" signature="327:499" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/Sorts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/HashSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="93" column="63" lean-forward="true" selection-start-line="93" selection-start-column="63" selection-end-line="93" selection-end-column="63" />
+          <folding>
+            <element signature="e#8064#8065#0" expanded="true" />
+            <element signature="e#8112#8113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/sorts/ShellSort/ShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+          <folding>
+            <marker date="1516033914000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516033914000" expanded="false" signature="141:1608" ph="..." />
+            <marker date="1516033914000" expanded="true" signature="2055:2206" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="2110:2125" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="2146:2156" ph=" }" />
+            <marker date="1516033914000" expanded="true" signature="2189:2200" ph="{}" />
+            <marker date="1516033914000" expanded="true" signature="2283:2373" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="2434:2445" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="2477:2483" ph=" }" />
+            <marker date="1516033914000" expanded="true" signature="2727:2968" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="3027:3350" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="3484:3811" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="3873:4063" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="4122:4446" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="4492:4767" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="4832:5044" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="5108:5315" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="5375:5560" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="5604:5864" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="5934:6093" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="5967:6086" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="6003:6022" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="6062:6076" ph=" }" />
+            <marker date="1516033914000" expanded="false" signature="6135:6146" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="6159:6165" ph=" }" />
+            <marker date="1516033914000" expanded="true" signature="6224:6742" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="6499:6648" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="6538:6565" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="6608:6630" ph=" }" />
+            <marker date="1516033914000" expanded="false" signature="6774:6785" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="6817:6823" ph=" }" />
+            <marker date="1516033914000" expanded="false" signature="6866:6877" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="6899:6905" ph=" }" />
+            <marker date="1516033914000" expanded="true" signature="7008:7452" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="7503:7514" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="7553:7559" ph=" }" />
+            <marker date="1516033914000" expanded="true" signature="7601:7948" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="7992:8470" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="8540:9373" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="9411:9937" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="9994:10195" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="10245:10622" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="10676:10687" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="10737:10743" ph=" }" />
+            <marker date="1516033914000" expanded="true" signature="10811:11038" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="10848:11031" ph="{...}" />
+            <marker date="1516033914000" expanded="true" signature="10893:11021" ph="{...}" />
+            <marker date="1516033914000" expanded="false" signature="11095:11106" ph=" { " />
+            <marker date="1516033914000" expanded="false" signature="11133:11139" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StaticShellSortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/itis/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

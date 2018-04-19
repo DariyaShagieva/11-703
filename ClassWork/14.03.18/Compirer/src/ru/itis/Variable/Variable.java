@@ -8,32 +8,26 @@ package ru.itis.Variable;
  * @author Nita
  */
 public class Variable {
-    private String var;
     private String name;
-    private double answer;
+    private double value;
 
-    public Variable(String inputVar) {
-        name = inputVar.split(":=")[0];
-        var = inputVar.split(":=")[1];
-    }
-
-    public String getVar() {
-        return var;
+    public Variable(String name, double value) {
+        this.name = name;
+        this.value = value;
     }
 
     public String getName() {
         return name;
     }
 
-    public double getAnswer(){
-        return answer;
+    public double getValue() {
+        return value;
     }
 
-    public void setAnswer(double answer) {
-        this.answer = answer;
-    }
-
-    public void setVar(String var) {
-        this.var = var;
+    @Override
+    public boolean equals(Object obj) {
+        Variable var = (Variable) obj;
+        if (var.getName().equals(name) && var.getValue() == value) return true;
+        else return false;
     }
 }

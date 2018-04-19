@@ -8,9 +8,9 @@ import java.util.LinkedList;
 public class Main {
 
     public static void main(String[] args) {
-        LinkedList <Variable> current = VariableBuilder.createList("x1:=-7;x3:=x1+9;x2:=x3;x4:=x2+x3+7/x1;");
+        LinkedList <Variable> current = VariableBuilder.createList("x1:=-7;x3:=x1+9;x2:=x3;x4:=x2*x2+x3+7/x1;");
         for (Variable var: current){
-            System.out.println(var.getName() + " := " + var.getVar() + "\t" + var.getAnswer());
+            System.out.println(var.getName() + " := " + "\t" + var.getValue());
         }
     }
 }

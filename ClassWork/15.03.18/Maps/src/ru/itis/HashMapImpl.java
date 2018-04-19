@@ -12,12 +12,12 @@ public class HashMapImpl<K, V> implements Map<K, V> {
 
     private KeyValue[] map;
 
-    private class KeyValue<K, V> {
+    private static class KeyValue <K, V>{
         private Node head;
         private Node tail;
 
         private void add(K key, V value) {
-            Node newNode = new Node(key, value);
+            Node<K,V> newNode = new Node<>(key, value);
             if (head == null) {
                 head = newNode;
                 tail = newNode;

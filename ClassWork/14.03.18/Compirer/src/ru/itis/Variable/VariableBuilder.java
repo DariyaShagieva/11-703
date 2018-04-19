@@ -16,7 +16,7 @@ public class VariableBuilder {
         double point;
         char sign;
 
-        public PointAndSign(double point, char sign) {
+        private PointAndSign(double point, char sign) {
             this.point = point;
             this.sign = sign;
         }
@@ -36,44 +36,47 @@ public class VariableBuilder {
         Compirer.analise(input);
         String[] vars = input.split(";");
         double cross;
+        Variable variable;
+        //x1  -7
+        //x3  x1+9
+        //x2  x3
+        //x4  x2*x2+x3+7/x1
         for (String var : vars) {
             //Если переменная число/отрицательное число - все просто
             //Переводим его значение
-            Variable variable = new Variable(var);
-            if (isNum(var)) {
-                variable.setAnswer(Integer.parseInt(var.split(":=")[1]));
-                variables.add(variable);
-            }
-            //Если не число (или не только число). Ну или сумма/произведение/частное/разность
-            else {
-                String polinom = var.split(":=")[1].split(";")[0];
-                char[] polinomAsChar = polinom.toCharArray();
+            double value = 0;
+            String [] polinome = var.split(":=");
+            if (isNumValue(polinome[1])){
+                variable = new Variable(polinome[0], Integer.parseInt(polinome[1]));
+            } else {
+                //Если не число (или не только число). Ну или сумма/произведение/частное/разность
+                char[] polinomeAsChar = polinome[1].toCharArray();
                 char signOfValue = '+';
                 int p = 0;
-                if (polinomAsChar[0] == '-') {
+                if (polinomeAsChar[0] == '-') {
                     signOfValue = '-';
                     p++;
                 }
 
                 LinkedList <PointAndSign> pointAndSigns = new LinkedList<>();
-                double currentNum = 0;
-                for (int c = p; c < polinomAsChar.length; c++) {
+                for (int c = p; c < polinomeAsChar.length; c++) {
                     PointAndSign currentPaS;
                     StringBuilder currentVar = new StringBuilder();
                     //собираем элементы одночлена по одному
-                    while (c < polinomAsChar.length && polinomAsChar[c] != '-' && polinomAsChar[c] != '+' && polinomAsChar[c] != '*' && polinomAsChar[c] != '/') {
-                        currentVar.append(polinomAsChar[c]);
+                    while (c < polinomeAsChar.length && polinomeAsChar[c] != '-' && polinomeAsChar[c] != '+'
+                            && polinomeAsChar[c] != '*' && polinomeAsChar[c] != '/') {
+                        currentVar.append(polinomeAsChar[c]);
                         c++;
                     }
 
                     //если одночлен число - просто сразу его добавляем в набор
-                    if (isNumVar(String.valueOf(currentVar))) {
+                    if (isNumValue(String.valueOf(currentVar))) {
                         cross = Integer.parseInt(String.valueOf(currentVar));
                     } else {
-                        int currentNums;
+                        int currentNum;
                         //иначе ищем его среди существующих значений
-                        if ((currentNums = exists(String.valueOf(currentVar))) >= 0) {
-                            cross = variables.get(currentNums).getAnswer();
+                        if ((currentNum = exists(String.valueOf(currentVar))) >= 0) {
+                            cross = variables.get(currentNum).getValue();
                         } else {
                             //если не находим - ошибка
                             throw new ExceptionInInitializerError();
@@ -85,15 +88,13 @@ public class VariableBuilder {
                     pointAndSigns.add(currentPaS);
 
                     //записываем следующий знак перед элементом многочлена
-                    if (c < polinomAsChar.length) {
-                        signOfValue = polinomAsChar[c];
+                    if (c < polinomeAsChar.length) {
+                        signOfValue = polinomeAsChar[c];
                     }
                 }
 
                 boolean multiplication;
-                char currentSign;
                 PointAndSign rebuild;
-                double currentSet = 0;
                 //ищем и убираем произведения
                 do{
                     multiplication = false;
@@ -102,14 +103,13 @@ public class VariableBuilder {
                             multiplication = true;
                             switch (pointAndSigns.get(c).sign){
                                 case '*':
-                                    currentSet = pointAndSigns.get(c-1).point * pointAndSigns.get(c).point;
+                                    value = pointAndSigns.get(c-1).point * pointAndSigns.get(c).point;
                                     break;
                                 case '/':
-                                    currentSet = pointAndSigns.get(c-1).point / pointAndSigns.get(c).point;
+                                    value = pointAndSigns.get(c-1).point / pointAndSigns.get(c).point;
                                     break;
                             }
-                            currentSign = pointAndSigns.get(c-1).sign;
-                            rebuild = new PointAndSign(currentSet, currentSign);
+                            rebuild = new PointAndSign(value, pointAndSigns.get(c-1).sign);
                             pointAndSigns.set(c - 1, rebuild);
                             pointAndSigns.remove(c);
                         }
@@ -117,43 +117,32 @@ public class VariableBuilder {
                     //до тех пор пока находим * или /
                 } while (multiplication);
 
+                value = 0;
                 for (int c = 0; c < pointAndSigns.size(); c++){
                     switch (pointAndSigns.get(c).sign){
                         case '+':
-                            currentNum += pointAndSigns.get(c).point;
+                            value += pointAndSigns.get(c).point;
                             break;
                         case '-':
-                            currentNum -= pointAndSigns.get(c).point;
+                            value -= pointAndSigns.get(c).point;
                             break;
                     }
                 }
-
-                variable.setAnswer(currentNum);
-                variables.add(variable);
+                variable = new Variable(polinome[0], value);
             }
+
+            variables.add(variable);
         }
         return variables;
     }
 
-    private static boolean isNumVar(String var) {
+    private static boolean isNumValue(String var) {
         char[] varValue = var.toCharArray();
-        boolean equals = true;
-        for (char current : varValue) {
-            if (!Character.isDigit(current)) {
-                equals = false;
-                break;
-            }
-        }
-        return equals;
-    }
-
-    private static boolean isNum(String var) {
-        char[] varValue = var.split(":=")[1].toCharArray();
-        boolean equals = true;
         int c = 0;
-        if (varValue[c] == '-') {
+        if (varValue[0] == '-'){
             c++;
         }
+        boolean equals = true;
         for (int count = c; count < varValue.length; count++) {
             if (!Character.isDigit(varValue[count])) {
                 equals = false;
