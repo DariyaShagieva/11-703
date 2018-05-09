@@ -90,31 +90,31 @@ public class BinarySearchTreeImpl<T extends Comparable<T>> implements BinarySear
     private boolean remove(TreeNode root, T element) {
         if (root == null)
             return false;
-        if (element.compareTo(root.value) < 0) {
-            remove(root.left, element);
-        } else {
-            if (element.compareTo(root.value) > 0) {
-                remove(root.right, element);
+        if (element.compareTo(root.value) == 0) {
+            if (root.left != null && root.right != null) {
+                TreeNode minLeft = root.right;
+                while (minLeft.left != null) {
+                    minLeft = minLeft.left;
+                }
+                root.value = minLeft.value;
+                root.value = minLeft.value;
+                replace(minLeft, minLeft.right);
             } else {
-                if (root.left != null && root.right != null) {
-                    TreeNode minLeft = root.right;
-                    while (minLeft.left != null) {
-                        minLeft = minLeft.left;
-                    }
-                    root.value = minLeft.value;
-                    root.value = minLeft.value;
-                    replace(minLeft, minLeft.right);
+                if (root.left != null) {
+                    replace(root, root.left);
                 } else {
-                    if (root.left != null) {
-                        replace(root, root.left);
+                    if (root.right != null) {
+                        replace(root, root.right);
                     } else {
-                        if (root.right != null) {
-                            replace(root, root.right);
-                        } else {
-                            replace(root, null);
-                        }
+                        replace(root, null);
                     }
                 }
+            }
+        } else {
+            if (element.compareTo(root.value) < 0) {
+                remove(root.left, element);
+            } else {
+                remove(root.right, element);
             }
         }
         return true;
@@ -123,12 +123,17 @@ public class BinarySearchTreeImpl<T extends Comparable<T>> implements BinarySear
     private void replace(TreeNode a, TreeNode b) {
         if (a.parent == null)
             root = b;
-        else if (a == a.parent.left)
-            a.parent.left = b;
-        else
-            a.parent.right = b;
-        if (b != null)
+        else {
+            if (a == a.parent.left){
+                a.parent.left = b;
+            }
+            else{
+                a.parent.right = b;
+            }
+        }
+        if (b != null){
             b.parent = a.parent;
+        }
     }
 
     @Override
@@ -138,7 +143,7 @@ public class BinarySearchTreeImpl<T extends Comparable<T>> implements BinarySear
 
     private void printByLevels(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();
-        TreeNode previous = null;
+        TreeNode previous;
         do {
             System.out.print(root.value + "\t");
             if (root.left != null) {

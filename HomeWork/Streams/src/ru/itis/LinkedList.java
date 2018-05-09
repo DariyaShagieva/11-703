@@ -1,9 +1,6 @@
 package ru.itis;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Iterator;
+import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -43,7 +40,7 @@ public class LinkedList<E> implements List<E>{
     }
 
     private class LinkedListStream implements Stream <E>{
-        private Iterator iterator;
+        private Iterator <E> iterator;
         private LinkedListStream(){
             iterator = iterator();
         }
@@ -56,6 +53,7 @@ public class LinkedList<E> implements List<E>{
             iterator = currentList.iterator();
             return this;
         }
+
 
         @Override
         public Stream<E> filter(Predicate predicate) {

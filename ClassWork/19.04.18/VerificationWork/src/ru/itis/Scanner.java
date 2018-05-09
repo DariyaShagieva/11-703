@@ -34,11 +34,14 @@ public class Scanner {
             int c;
             byte [] bytes = new byte[size];
             int currentCount = count;
-            while ((c = inputStream.read()) != ' ' && count < size && c != -1){
+            while ((c = inputStream.read()) != ' ' && c != -1){
                 bytes[count] = (byte) c;
                 count++;
             }
-            
+            if (currentCount == count){
+                System.err.println("Чисел больше нет");
+                throw new IllegalStateException();
+            }
             int pow = 1;
             for (int cur = count - 1; count - cur <= count - currentCount; cur--){
                 if (bytes[cur]!='-'){

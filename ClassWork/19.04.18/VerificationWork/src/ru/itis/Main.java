@@ -7,5 +7,6 @@ public class Main {
         System.out.println(in.nextInt());
         System.out.println(in.nextInt());
         System.out.println(in.nextInt());
+        System.out.println(in.nextInt());
     }
 }
